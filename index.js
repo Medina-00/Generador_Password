@@ -4,10 +4,14 @@ const show = document.querySelector(".show");
 const passwordInput = document.getElementById("password");
 
 
-generateButton.onclick = function generatePassword(){
 
+
+
+generateButton.onclick = function generatePassword(){
+    
+    const cantidad = document.getElementById("cantidad").value;
     const character = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*_";
-    const pwdLength = 16;
+    const pwdLength = cantidad;
     let password = "";
 
     for(let i = 0; i < pwdLength; i++){
